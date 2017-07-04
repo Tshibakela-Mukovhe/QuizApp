@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:drawable/picture_frame"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:context="com.tshibakela.yooohqpzzz.MainActivity2">
+
+
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/namTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+
+                        android:background="#190"
+
+                        android:elevation="0dp"
+                        android:text="==========N.B. Before U start===========\n Once you submit twice you cannot go back and change your answer"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="16dp"
+                        android:visibility="visible" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/uuImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#6624a7"
+                            android:onClick="playP1"
+                            android:text="Read"
+                            android:layout_margin="5dp"
+                            android:visibility="visible"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <TextView
+                            android:id="@+id/p1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+
+                            android:layout_weight="409"
+                            android:text="Q1. What method you should override to use Android menu system?"
+                            android:textColor="#109"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <RadioGroup
+
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/picture_frame">
+
+                        <RadioButton
+                            android:id="@+id/rBtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a.\t onCreateOptionsMenu()" />
+
+                        <RadioButton
+                            android:id="@+id/rBtn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="b.\t onCreateMenu()" />
+
+                        <RadioButton
+                            android:id="@+id/rBtn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="c.\t onMenuCreated()" />
+
+                        <RadioButton
+                            android:id="@+id/rBtn4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="d.\t onCreateContextMenu()" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+
+                            android:id="@+id/uu1Image"
+                            android:layout_width="26dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="#d7800099"
+                            android:onClick="playP2"
+                            android:text="Read"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <TextView
+                            android:id="@+id/p2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="100"
+
+
+                            android:text="Q2. What Activity method you use to retrieve a reference to an Android view by using the id attribute of a resource XML?"
+                            android:textColor="#109" />
+
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/picture_frame"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/r1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a. findViewByReference(int id);" />
+
+                        <RadioButton
+                            android:id="@+id/r2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="b. findViewById(int id)" />
+
+                        <RadioButton
+                            android:id="@+id/r3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="c. retrieveResourceById(int id)" />
+
+                        <RadioButton
+                            android:id="@+id/r4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="d. findViewById(String id)" />
+
+
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/uu2Image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30"
+                            android:background="#d7800099"
+                            android:layout_margin="5dp"
+                            android:onClick="playP3"
+                            android:text="Read"
+                            android:visibility="visible"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <TextView
+                            android:id="@+id/p3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="100"
+                            android:textColor="#109"
+                            android:text="Q3. Which of the following is not an Android component (i.e. a point from which the system can enter your application)?" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/memoTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:rotation="70"
+                        android:scaleX="7"
+                        android:scaleY="4"
+                        android:text="Memorandum"
+                        android:visibility="gone" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup3"
+                        android:layout_width="match_parent"
+                        android:background="@android:drawable/picture_frame"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a. Service" />
+
+                        <RadioButton
+                            android:id="@+id/rr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="b. Activity" />
+
+                        <RadioButton
+                            android:id="@+id/rr3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="c. Layout" />
+
+                        <RadioButton
+                            android:id="@+id/rr4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="d. Content Provider" />
+
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/uu3Image"
+                            android:layout_width="32dp"
+                            android:layout_height="match_parent"
+                            android:background="#d7800099"
+                            android:onClick="playP4"
+                            android:text="Read"
+                            android:layout_margin="5dp"
+                            android:visibility="visible"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <TextView
+                            android:id="@+id/p4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="60"
+                            android:textColor="#109"
+                            android:text="Q4. During an Activity life-cycle, what is the first callback method invoked by the system?" />
+
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/picture_frame"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/br1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a. onStop()" />
+
+                        <RadioButton
+                            android:id="@+id/br2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="b. onStart()" />
+
+                        <RadioButton
+                            android:id="@+id/br3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="c. onCreate()" />
+
+                        <RadioButton
+                            android:id="@+id/br4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="d. onRestore()" />
+
+
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+
+                            android:id="@+id/uu4Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30"
+                            android:background="#d7800099"
+                            android:onClick="playP5"
+                            android:text="Read"
+                            android:layout_margin="5dp"
+                            android:visibility="visible"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <TextView
+                            android:id="@+id/p5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="100"
+                            android:textColor="#109"
+                            android:text="Q5. Which configuration file holds the permission to use the internet?" />
+
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/picture_frame">
+
+                        <RadioButton
+                            android:id="@+id/b1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a. Layout file" />
+
+                        <RadioButton
+                            android:id="@+id/b2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="b. Property file" />
+
+                        <RadioButton
+                            android:id="@+id/b3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="c. Java source file" />
+
+                        <RadioButton
+                            android:id="@+id/b4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="d. Manifest file" />
+
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/p6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:textColor="#109"
+                        android:text="Q6. What does the following line of code achieve?" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageButton
+
+                            android:id="@+id/uu5Image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#d7800099"
+                            android:onClick="playP6"
+                            android:text="Read"
+                            android:layout_margin="5dp"
+                            android:visibility="visible"
+                            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                        <TextView
+                            android:id="@+id/pp6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:text="Hint: Intent intent = new Intent(FirstActivity.this, SecondActivity.class );"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:layout_weight="100"
+                           android:background="#05732d57"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/picture_frame">
+
+                        <RadioButton
+                            android:id="@+id/q61btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a. Creates an hidden Intent" />
+
+                        <RadioButton
+                            android:id="@+id/q62btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="b. Creates an implicit Intent" />
+
+                        <RadioButton
+                            android:id="@+id/q63btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="c. Create an explicit Intent" />
+
+                        <RadioButton
+                            android:id="@+id/q64btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="d. Starts an activity." />
+
+
+                    </RadioGroup>
+
+
+                    <TableLayout
+                        android:id="@+id/tbLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <QuickContactBadge />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="80dp">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:background="@android:color/transparent"
+
+                                android:text="Mlab CodeTribe Student Results"
+                                android:textAllCaps="false"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+
+
+                        <TableRow>
+
+                            <TextView android:text="Name" />
+
+                            <TextView
+                                android:id="@+id/namtxt"
+                                android:text="Name here" />
+                        </TableRow>
+
+
+                        <TableRow>
+
+                            <TextView android:text="Cell No" />
+
+                            <TextView
+                                android:id="@+id/numbtxt"
+                                android:text="Number"
+
+                                />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView android:text="ID no."
+
+                                />
+
+                            <TextView
+                                android:id="@+id/idtxt"
+                                android:text="Identy" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView android:text="Average Grades"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/mrktxt"
+                                android:text="marks" />
+                        </TableRow>
+
+                        <FrameLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This is what we can get from you"
+                                android:textColor="?attr/colorPrimaryDark"
+                                android:textStyle="bold|italic" />
+                        </FrameLayout>
+
+
+                    </TableLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="donebtn"
+                            android:text="Submit"
+                            android:textColor="#129"
+                            android:textAllCaps="false" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/town"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/TestTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Heading" />
+
+                    <TextView
+                        android:id="@+id/Randtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Instruction"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/FineText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="you"
+                        android:visibility="gone" />
+
+
+                    <RadioGroup
+                        android:id="@+id/yeboRad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp">
+
+                        <RadioButton
+                            android:id="@+id/pbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="You are not allowed to use internet, book or any source to assist... " />
+
+                        <RadioButton
+                            android:id="@+id/p1btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="If we detect any unlegal conduct we will hold marks" />
+
+                        <RadioButton
+                            android:id="@+id/p2btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="The time you start you are not allowed to back" />
+
+                        <RadioButton
+                            android:id="@+id/p3btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Press Submit to begin the test " />
+
+                        <Button
+                            android:id="@+id/Dubai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="Doll"
+
+                            android:text="Submit" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/imageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="Speaking"
+                                app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                android:onClick="Pause"
+                                app:srcCompat="@android:drawable/ic_media_pause" />
+
+                        </LinearLayout>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
+
+</ScrollView>
